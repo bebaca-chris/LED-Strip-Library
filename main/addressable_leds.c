@@ -147,8 +147,8 @@ void led_strip_update()
         int led_flash = led_config[i].flashing;
         if (led_on && (!led_flash || (led_flash && s_led_state)))
         {
-            //led_strip_set_pixel_rgbw(led_strip, i,led_config[i].green,led_config[i].red,led_config[i].blue,led_config[i].white);
-            led_strip_set_pixel(led_strip, i,led_config[i].green,led_config[i].red,led_config[i].blue);
+            //led_strip_set_pixel_rgbw(led_strip, i,led_config[i].red,led_config[i].green,led_config[i].blue,led_config[i].white);
+            led_strip_set_pixel(led_strip, i,led_config[i].red,led_config[i].green,led_config[i].blue);
         } else {
             //led_strip_set_pixel_rgbw(led_strip, i, 0, 0, 0,0);
             led_strip_set_pixel(led_strip, i, 0, 0, 0);
